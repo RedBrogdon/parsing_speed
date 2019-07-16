@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style>
+        body {
+            font-size: 12pt;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+     
+    <script type="text/javascript" src="require.js"></script>
+    <script type="text/javascript" src="dart_sdk_requirejs.js"></script>
+    <script>
+    	require(['dart_sdk'], function() {
+    		console.log('done!');
+    	});
+    </script>
+</head>
+
+<body style="padding: 60px;">
+    <ul>
+        <li>Plain script tag</li>
+        <li><a href="index_requirejs.html">RequireJS module</a></li>
+        <li><a href="index_es6.html">ES6 module</a></li>
+        <li><a href="index_es6_no_export.html">Same ES^ script, without exports, plain script tag</a></li>
+    </ul>
+	<button>
+	  Can you click this button or has the page frozen?
+	</button>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+        body {
+            font-size: 12pt;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+
+	<script type="module">
+	  import {blah} from "./dart_sdk_es6.js";
+	  console.log(blah["key"]);
+	</script>
+</head>
+
+<body style="padding: 60px;">
+    <ul>
+        <li><a href="index_vanilla.html">Plain script tag</a></li>
+        <li><a href="index_requirejs.html">RequireJS module</a></li>
+        <li>ES6 module</li>
+        <li><a href="index_es6_no_export.html">Same ES6 script, without exports, plain script tag</a></li>
+    </ul>
+	<button>
+	  Can you click this button or has the page frozen?
+	</button>
+</body>
+
+
+</html>
